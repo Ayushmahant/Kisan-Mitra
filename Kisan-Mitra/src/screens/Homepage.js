@@ -50,8 +50,8 @@ const HomeScreen = () => {
           data={newsFeed}
           renderItem={renderItem}
           keyExtractor={(item) => item.id.toString()}
-          // ListEmptyComponent={<Text style={styles.loadingText}>No news available</Text>}
-          // ListFooterComponent={loading && <Text style={styles.loadingText}>Loading...</Text>}
+          ListEmptyComponent={<Text style={styles.loadingText}>No news available</Text>}
+          ListFooterComponent={loading && <Text style={styles.loadingText}>Loading...</Text>}
         />
       </SafeAreaView>
     </LinearGradient>
