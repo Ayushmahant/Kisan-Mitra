@@ -9,19 +9,19 @@ const OTPPage = ({ navigation, route }) => {
 
     const { username } = route.params; // Receiving the username passed from Login
 
-    // useEffect(() => {
-    //     if (timer === 0) return;
+    useEffect(() => {
+        if (timer === 0) return;
 
-    //     const interval = setInterval(() => {
-    //         setTimer((prev) => prev - 1);
-    //     }, 1000);
+        const interval = setInterval(() => {
+            setTimer((prev) => prev - 1);
+        }, 1000);
 
-    //     return () => clearInterval(interval);
-    // }, [timer]);
+        return () => clearInterval(interval);
+    }, [timer]);
 
-    // const handleOtpChange = (value) => {
-    //     setOtp(value);
-    // };
+    const handleOtpChange = (value) => {
+        setOtp(value);
+    };
 
     const handleVerifyOtp = async () => {
         if (otp.length !== 6) {
