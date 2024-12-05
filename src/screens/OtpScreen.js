@@ -19,9 +19,9 @@ const OTPPage = ({ navigation, route }) => {
     //     return () => clearInterval(interval);
     // }, [timer]);
 
-    const handleOtpChange = (value) => {
-        setOtp(value);
-    };
+    // const handleOtpChange = (value) => {
+    //     setOtp(value);
+    // };
 
     const handleVerifyOtp = async () => {
         if (otp.length !== 6) {
