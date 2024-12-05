@@ -23,24 +23,24 @@ const HomeScreen = () => {
     fetchNews();
   }, []);
 
-  const renderItem = ({ item }) => (
-    <View style={styles.postContainer}>
-      <Image  source={require('../assets/images/seed.png')}style={styles.postImage} />
-      <View style={styles.postContent}>
-        <Text style={styles.postTitle}>{item.title}</Text>
-        <Text style={styles.postDescription}>{item.description}</Text>
-        <View style={styles.actions}>
-          <TouchableOpacity style={styles.iconButton}>
-            <Text style={styles.icon}>❤️</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.iconButton}>
-            <Text style={styles.icon}>💬</Text>
-          </TouchableOpacity>
-        </View>
-        <Text style={styles.timestamp}>{item.timestamp}</Text>
-      </View>
-    </View>
-  );
+  // const renderItem = ({ item }) => (
+  //   <View style={styles.postContainer}>
+  //     <Image  source={require('../assets/images/seed.png')}style={styles.postImage} />
+  //     <View style={styles.postContent}>
+  //       <Text style={styles.postTitle}>{item.title}</Text>
+  //       <Text style={styles.postDescription}>{item.description}</Text>
+  //       <View style={styles.actions}>
+  //         <TouchableOpacity style={styles.iconButton}>
+  //           <Text style={styles.icon}>❤️</Text>
+  //         </TouchableOpacity>
+  //         <TouchableOpacity style={styles.iconButton}>
+  //           <Text style={styles.icon}>💬</Text>
+  //         </TouchableOpacity>
+  //       </View>
+  //       <Text style={styles.timestamp}>{item.timestamp}</Text>
+  //     </View>
+  //   </View>
+  // );
 
   return (
     <LinearGradient colors={['#F4E7B7', '#FFFAF0']} style={styles.container}>
